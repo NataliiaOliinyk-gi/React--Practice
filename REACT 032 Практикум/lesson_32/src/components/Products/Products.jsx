@@ -43,6 +43,8 @@ const Products = () => {
     return (
         <section>
             <h2>Products</h2>
+            {loading && <p>Loading...</p>}
+            {error && <p>{error}</p>}
             <ul>{elements}</ul>
         </section>
     )
