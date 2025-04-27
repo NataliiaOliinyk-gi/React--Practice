@@ -6,7 +6,7 @@ export const sectionTitleWrapperStyle = css`
 `;
 
 export const sectionTitleHeadingStyle = css`
-    ont-size: 36px;
+    font-size: 36px;
     font-weight: 700;
     color: #000;
     margin-bottom: 37px;

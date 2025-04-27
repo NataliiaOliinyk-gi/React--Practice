@@ -11,12 +11,19 @@ export const productCardWrapperStyle = css`
 
 export const productCardImageWrapperStyle = css`
     text-align: center;
+    width: 278px;
+    height: 190px;
+    overflow: hidden;
     margin-bottom: 32px;
 `;
 
 export const productCardImageStyle = css`
-    ${imgResponsiveStyle}
-    max-width: 278px;
+    ${imgResponsiveStyle};
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 `
 
 export const productCardTitleStyle = css`
