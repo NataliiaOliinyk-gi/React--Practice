@@ -1,0 +1,1 @@
+export const selectAllExpences = store => store.expenses;
