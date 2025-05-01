@@ -17,7 +17,8 @@ const ExpenseList = () => {
         dispatch(deleteExpense(id))
     }
 
-    const elements = items.map((item) => <ExpenseItem key={item.id} {...item} onDelete={onDeleteExpense} />)
+    const elements = items.map((item) =>
+        <ExpenseItem key={item.id} {...item} onDelete={onDeleteExpense} />)
 
     return (
         <>
