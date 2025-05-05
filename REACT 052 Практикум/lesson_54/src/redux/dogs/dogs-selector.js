@@ -1,0 +1,1 @@
+export const sellectDogs = store => store.dogs;
