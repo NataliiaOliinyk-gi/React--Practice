@@ -3,7 +3,7 @@ import axios from "axios";
 import requestDecorator from "./requestDecorator";
 
 const authInstance = axios.create({
-    baseURL: "http://localhost:5000/api"
+    baseURL: "http://localhost:4000/api"
 })
 
 export const registerUserApi = requestDecorator(async payload => {

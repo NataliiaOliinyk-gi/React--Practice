@@ -20,13 +20,13 @@ const authSlice = createSlice({
             .addCase(registerUser.pending, pending)
             .addCase(registerUser.rejected, rejected)
             .addCase(registerUser.fulfilled, (store) => {
-                store.loading = true;
+                store.loading = false;
                 store.success = true;
             })
             .addCase(loginUser.pending, pending)
             .addCase(loginUser.rejected, rejected)
             .addCase(loginUser.fulfilled, (store, { payload }) => {
-                store.loading = true;
+                store.loading = false;
                 store.success = true;
                 store.token = payload.token;
                 store.user = payload.user;

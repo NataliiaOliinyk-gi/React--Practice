@@ -12,7 +12,7 @@ const Login = () => {
 
     const dispatch = useDispatch();
 
-    const onRegiserUser = data => {
+    const onLoginUser = data => {
         dispatch(loginUser(data));
     }
 
@@ -20,7 +20,7 @@ const Login = () => {
 
     return (
         <div>
-            <LoginForm submitForm={onRegiserUser} />
+            <LoginForm submitForm={onLoginUser} />
         </div>
     )
 }
